@@ -10,19 +10,19 @@ import AntDesign from 'react-native-vector-icons/AntDesign';
 
 const Login = ({ navigation }) => {
   const [isChecked, setIsChecked] = useState(false);
-  const [email, setEmail] = useState(''); // State to hold email
-  const [password, setPassword] = useState(''); // State to hold password
+  const [email, setEmail] = useState(''); 
+  const [password, setPassword] = useState(''); 
 
   const handleSignUp = () => {
     if (!isChecked) {
       Alert.alert('Attention', 'Please accept the terms & privacy policy first.');
       return;
     }
-    navigation.replace('Home'); // Redirect to Home screen
+    navigation.replace('Tabs');
   };
 
   const handleLogin = () => {
-    // Validate email and password
+  
     if (!email || !password) {
       Alert.alert('Error', 'Please enter both email and password.');
       return;

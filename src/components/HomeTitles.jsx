@@ -24,5 +24,5 @@ const HomeTitles = ({title, subtitle}) => {
     </View>
   );
 };
-
+  
 export default HomeTitles;
