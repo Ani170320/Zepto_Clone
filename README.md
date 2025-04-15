@@ -1,97 +1,102 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Zepto Clone - E-commerce App
 
-# Getting Started
+Welcome to **Zepto Clone**! This is a mobile application built with **React Native** that mimics the core functionality of the Zepto e-commerce app. It provides a seamless shopping experience for users, allowing them to explore products, manage their cart and wishlist, and log in and out.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+---
 
-## Step 1: Start Metro
+## 🚀 Features
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+- **Splash Screen**: A beautiful introductory screen displayed when the app starts.
+- **Home Screen**: Browse a variety of products with a smooth UI.
+- **Login Screen**: Authenticate users with a login page.
+- **Cart**: Manage cart items with the option to add or remove products.
+- **Wishlist**: Save favorite items for later purchases.
+- **Bottom Tab Navigation**: Easy access to the Home, Cart, and Wishlist sections.
+- **Location Services**: Integration with Google Location services for location-based features.
+- **Persistent Data Storage**: Using Async Storage for storing user data locally.
+- **Responsive Design**: Optimized UI for all device sizes and screen resolutions.
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+---
 
-```sh
-# Using npm
-npm start
+## 🛠 Tech Stack
 
-# OR using Yarn
-yarn start
+- **React Native**: The primary framework for building the mobile app.
+- **React Navigation**: For seamless navigation using stack and bottom tab navigators.
+- **Redux Toolkit**: Simplifies state management across the app.
+- **React Native Google Location Service**: For accessing and managing the user's location.
+- **Async Storage**: A key-value storage system for saving user data locally.
+- **AntDesign Icons**: Vector icons for a visually appealing UI.
+- **React Native Vector Icons**: A collection of customizable icons for the app’s UI.
+
+---
+
+## 🔧 Installation
+
+Follow these simple steps to get the project up and running locally:
+
+### 1. Clone the repository
+
+```bash
+https://github.com/Ani170320/Zepto_Clone.git
 ```
 
-## Step 2: Build and run your app
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+### 2. Install Dependencies
+Navigate to the project directory and install all required dependencies:
+bash
+Copy
+Edit
+cd zepto-clone
+npm install
+3. Run the App
+Run the app on your desired platform:
 
-### Android
+### For Android:
+bash
+Copy
+Edit
+npx react-native run-android
 
-```sh
-# Using npm
-npm run android
+### For iOS:
+bash
+Copy
+Edit
+npx react-native run-ios
+Ensure you have Android Studio or Xcode set up to run the app.
 
-# OR using Yarn
-yarn android
-```
+### 📂 Folder Structure
+Here’s an overview of the folder structure for better understanding:
+bash
+Copy
+Edit
+/screens               - Contains all the screen components (Home, Cart, Wishlist, Login, etc.)
+/navigation            - All navigation logic including Stack and Bottom Tab navigators.
+/assets                - Stores images, icons, and other media resources.
+/components            - Reusable components like buttons, cards, headers, etc.
+/redux                 - Redux state management setup with slices for different features.
+🤝 Contributing
+We welcome contributions! If you’d like to help improve this project, follow these steps:
 
-### iOS
+### Steps to Contribute:
+Fork the repository.
+Create a new branch for your feature (git checkout -b feature-name).
+Make your changes and commit them (git commit -am 'Add new feature').
+Push to your branch (git push origin feature-name).
+Open a pull request and describe your changes.
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+### 📝 License
+This project is **open-source** and free to use, modify, and distribute. Feel free to contribute and improve the project.
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+### 💡 Acknowledgements
+React Native - For making cross-platform mobile app development a breeze.
+React Navigation - For seamless navigation and routing.
+Redux Toolkit - For simplifying state management.
+React Native Google Location Service - For integrating location features.
+AntDesign Icons - For high-quality icons that enhance the UI.
 
-```sh
-bundle install
-```
+### 📧 Contact
+If you have any questions or need further assistance, feel free to reach out!
+Email: anirudhgadgikar@gmail.com
 
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
-
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
-
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+### Happy coding! 🎉
+This markdown file is now ready for use. You can simply copy and paste it into your `README.md` file fo
